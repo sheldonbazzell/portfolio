@@ -1,0 +1,609 @@
+body {
+	background-color: #e0e0e0;
+	color: white;
+	font-family: 'Archivo Black', cursive;
+	font-weight: lighter;
+}
+
+.navbar {
+    background:  #9e9e9e !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: bold;
+    padding: 0.7% 0;
+    line-height: 10%;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 75px;
+    line-height: 75px;
+}
+
+nav .button-collapse i {
+    height: 75px;
+    line-height: 75px;
+}
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+.btnz {
+	margin: 0px !important;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 75px;
+        line-height: 75px;
+    }
+}
+
+a.navbar-brand {
+	font-size: 4vw;
+	text-decoration: none;
+	margin-left: 3% !important;
+	color: white !important;
+}
+
+.pull-right {
+	width: 33%;
+}
+
+.navbar-right li {
+	margin-right: 3%;
+}
+
+.navbar-right li a {
+	padding: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-nav li a {
+	color: white;
+	font-weight: bold;
+	font-size: 1.3vw;
+}
+
+.row {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.fluid2 {
+	background-color: #bdbdbd !important;
+	width: 100%;
+}
+
+.row1 {
+	background-color: #e0e0e0
+}
+
+#skills-head {
+	padding-bottom: 25px !important;
+	margin-top: 3%;
+}
+
+.jumbotron {
+	width: 100%;
+    border-radius: 0px !important;
+	color: black;
+	/*background-color: white !important;*/
+	padding-left: 1.5% !important;
+	padding-right: 1.5% !important;
+	padding: 20px 0 30px !important;
+	margin: 7% auto 0;
+}
+
+.table {
+	color: black;
+}
+
+th {
+	font-size: 1.5vw;
+}
+
+td {
+	font-size: 1.5vw;
+}
+
+th, td {
+	text-align: center;
+}
+
+#name-jumbo {
+	height: 90%;
+}
+
+#name, #dev {
+	font-family: 'Baloo', monospace !important;
+	font-weight: bold !important;
+}
+
+#sheldon {
+	font-size: 4vw !important;
+	line-height: 1.6;
+}
+
+#name:hover {
+	text-shadow: 2px 2px 4px grey;
+}
+
+#top-link {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:30px;
+	display: none;
+	position: fixed;
+	margin-left: 95%;
+}
+
+#dev {
+	color: black;
+	font-size: 3.75vw;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#name {
+	margin-bottom: 15px;
+	margin-top: 10%;
+	line-height: 1;
+	color: black;
+	text-align: center;
+	font-size: 7vw !important;
+}
+
+#dev {
+	font-size: 5vw !important;
+}
+
+#projects {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.tech {
+	margin: 0 auto;
+	color: black;
+	font-size: 6.2vw !important;
+}
+
+#skill-head {
+	color: black;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	font-size: 6vw !important;
+}
+
+#hello-col{
+	text-align: center;
+}
+.us {
+	color: black;
+	text-align: left !important;
+	padding: 2%;
+	width: 80%;
+	margin: -3% auto 0;
+	line-height: 1.8;
+	font-size: 1.5vw;
+}
+
+#blog-mention {
+	margin-top: 1%;
+}
+
+#headshot-col {
+	display: block !important;
+	width: 100%;
+}
+
+#hello-col {
+	width: 100%;
+	display: block;
+}
+
+#headshot {
+	margin: 1% auto 5%;
+	width: 65%;
+}
+
+#skills-go {
+	height: 50px;
+	padding: 1%;
+}
+
+#my-skills {
+	padding: 1% 2%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.skill-box {
+	text-align: left;
+	color: black;
+	padding: 1% 0;
+	margin: 0 auto;
+	width: 93%;
+}
+
+.headers, .skills {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.headers {
+	font-size: 2.7vw;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.skills {
+	font-size: 2.1vw;
+    font-family: 'Fira Sans Condensed', sans-serif;
+	font-weight: normal;
+	margin-left: 1%;
+	margin-bottom: 0.2%;
+}
+
+.last-header {
+	font-size: 2.7vw;
+	display: inline-block;
+	margin-top: 0 !important;
+	margin-bottom: 0;
+}
+
+.last-skill {
+    font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 2.1vw;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0.7% 0 0 1% !important;
+	line-height: 1.3;
+
+}
+
+.last-skill, .last-header {
+	display: inline-block;
+	margin-top: 2%;
+	vertical-align: top !important;
+}
+
+.content-box { 
+	text-align: center;
+	width: 95%;
+	margin: 5% auto 2%;
+ }
+
+ h1 {
+ 	font-size: 65px;
+ }
+
+ .about {
+ 	margin: 2% auto 2%;
+ 	width: 100%;
+ 	font-size: 4vw !important;
+ 	text-align: center;
+ }
+
+ .about2 {
+ 	margin: 2% auto 3%;
+ 	width: 50%;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	font-size: 2.5vw;
+ 	text-align: center;
+ }
+
+.projects {
+	width: 100%;
+	margin-top: -30px;
+	text-align: center;
+}
+
+ul {
+	width: 90%;
+	list-style-type: none;
+ 	margin: 0 auto;
+	padding-left: 0px;
+}
+
+	 .example {
+	 	width: 100%;
+	 	color: black;
+	 	padding-bottom: 2%;
+	 	margin: 0 auto 30px;
+	 }
+
+	.screenshots {
+		margin: 3% 2%;
+		max-width: 40%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.screenshots2 {
+		margin: 2% 2%;
+		max-width: 60%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+ 	.content, .logo {
+ 		display: inline-block;
+ 		vertical-align: top;
+ 	}
+
+ 	.logo {
+ 		margin: 3% auto 0;
+ 		width: 13%;
+	}
+
+	.logo3 {
+		margin-top: 2%;
+		width: 11%;
+	}
+
+	.logo4 {
+		margin-top: 3%;
+	}
+
+	.content {
+		width: 85%;
+	}
+
+	.example-tech {
+		text-align: center;
+	 	margin: 10px 0 0 0;
+	}
+
+	 .example-head, .example-project {
+	 	text-align: left;
+	 	margin: 10px 0 0 0;
+	 }
+
+	 .example-head {
+	 	font-size: 6vw;
+	 	width: 80%;
+	 	margin: 0 auto;
+	 	text-align: center;
+	 }
+
+ 	 .example a {
+	 	font-size: 2vw;
+	 }
+
+	 .example-tech {
+	 	font-weight: bold;
+	 }
+
+	 .example-tech, .example-project {
+	    font-family: 'Fira Sans Condensed', sans-serif;
+	 	font-size: 1.5vw;
+	 }
+
+.contact-box {
+	width: 70%;
+	margin: 8% auto 13.5%;
+	text-align: left;
+}
+	.sites {
+		color: black;
+		text-align: center;
+		background-color: #9e9e9e;
+		padding-top: 0.75%;
+		padding-bottom: 0.75%;
+	}
+
+	.icon {
+		max-width: 8%;
+		margin-right: 2%;
+	}
+
+	.icon2 {
+		max-width: 9%;
+		margin-right: 2%;
+	}
+
+	#email {
+		margin-top: 0;
+		font-size: 3vw;
+	}
+
+	.contact {
+		margin-top: 3%;
+		font-size: 3vw;
+	}
+
+		.contact a, .port a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		.port a:hover {
+			text-decoration: underline;
+			text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+		}
+
+		.contact span {
+			font-weight: normal;
+		}
+
+	#foot {
+		margin-bottom: -20px;
+		height:100vh;
+	}
+
+@media screen and (max-width: 1150px) {
+	.navbar-right {
+		width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+  #name {
+  	margin-top: 20%;
+  }
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #e7e7e7;
+		background-color: #9e9e9e;
+	}
+
+	.pull-right {
+		width: 50%;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		font-size: 2.2vw;
+	}
+
+  a#top-link {
+  	display: none !important;
+  }
+
+  #headshot {
+  	margin: 11% auto 5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+	body { font-size: 2em; }
+
+	.navbar-default .navbar-nav>li>a {
+		font-size: 4vw;
+	}
+
+	nav {
+		height: 56px;
+	}
+
+	#skill-nav {
+		display: none !important;
+	}
+
+	a.navbar-brand {
+		font-size: 7vw !important;
+		color: white !important;
+	}
+
+	.pull-right {
+		width: 33%;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		font-size: 4vw !important;
+	}
+
+   .navs {
+   	display: none !important;
+   }
+
+   #top-link {
+		display: none !important;
+		color: black;
+		margin-left: 0 !important;
+	}
+
+	.us {
+		line-height: 1.8;
+		font-size: 3vw;
+		width: 90%;
+	}
+
+	#name {
+		margin-top: 25%;
+	}
+
+	#headshot {
+		margin: 5% auto 10%;
+	}
+
+	#skills-go {
+		height: 30px;
+	}
+
+	#skills-head {
+		margin-top: 10%;
+	}
+
+	.jumbotron {
+		margin-top: 19%;
+		padding: 3% 0;
+	}
+
+	#my-skills {
+		width: 88%;
+	}
+
+	#foot {
+		height: 62vh !important;
+	}
+
+	.last-skill, .last-header {
+		display: block;
+		margin-top: 2%;
+		vertical-align: top !important;
+	}
+
+	.headers {
+		font-weight: bold;
+	}
+
+	#sheldon {
+		font-size: 4vw !important;
+	}
+
+
+	.skills {
+		display: block;
+		margin-top: 2%;
+		font-size: 3vw;
+	}
+
+	.last-skill {
+		font-size: 3vw;
+		display: block;
+	}
+
+	ul {
+		width: 100%;
+	}
+
+	.example-tech, .example-project {
+		font-size: 4vw;
+	}
+
+	.example a {
+		font-size: 4vw;
+	}
+
+	.contact-box {
+		width: 90%;
+	}
+
+	#email {
+		margin-top: 5%;
+	}
+
+	.port a {
+		font-size: 4vw !important;
+	}
+
+}

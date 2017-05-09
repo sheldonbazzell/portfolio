@@ -1,0 +1,292 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Baloo|Ek+Mukta|Fira+Sans+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script>
+  $(document).ready(function() {
+    $(".button-collapse").sideNav({
+      closeOnClick: true,
+      draggable: true
+    });
+    $('.collapsible').collapsible();
+  })
+</script>
+</head>
+<body>
+<a id="top"></a>
+<nav class="navbar navbar-default navbar-fixed-top z-depth-1" id="top">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand valign" href="#top">SB</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+            <li><a href="#pad">Skills</a></li>
+            <li><a href="#project-head">Projects</a></li>
+            <li><a href="#contact-container">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/0B0zYpkuiznx-M1M1akZmdjlwaFk/view?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid fluid2">
+<div class="row row1 grey lighten-5">
+  <a id="top-link" href="#top">Top ^</a>
+  <div class="col s12" id="head">
+    <div class="content-box">
+      <h1 id="name">Sheldon Bazzell</h1>
+      <h2 id="dev">Software Engineer</h2>
+      </div>
+<!-- </div>
+<div class="row row1 grey lighten-5"> -->
+
+    <img src="images/hs2.JPG" id="headshot" class="z-depth-4 materialboxed" alt="Sheldon's Headshot" />
+</div>
+<div class="col s12" id="hello-col">
+<div class="us z-depth-3 grey lighten-2">
+  <p>
+    I’m a problem-solver who writes clean, robust code. The bulk of my development experience revolves around web technologies, and includes everything from designing and building full-stack applications down to framework development. Prior to Software Engineering, I gained nearly 3 years work experience with marketing management and business-to-business ad sales.
+    <p></p>
+  </p>
+  <p>
+    Have a spot on your team or just want to chat? 
+    <a href="#contact-container">Let's get in touch!</a>
+  </p>
+    <p id="blog-mention"> 
+      Want to know <i>me</i> a little better? If I'm not picking up a new technology, I'm probably on the road, 
+      <a target="_blank" href="http://brewingadventure.com">traveling with my wife.</a> It's in progress; not to worry, the content is being generated.
+    </p>
+  </div>
+</div>
+</div>
+<div class="row row1 grey lighten-5">
+  <div class="col s12" id="headshot-col">
+    <div id="pad"></div>
+  <!-- </div> -->
+  <div id="skills-go"></div>
+  </div>
+  </div>
+  <div id="skills-head" class="jumbotron valign-wrapper grey lighten-1">
+    <h1 id="skill-head" class="tech">Technical Skills</h1>
+  </div>
+  <div class="content-box z-depth-4 grey lighten-2" id="my-skills">
+  <div class="skill-box">
+    <h4 class="headers">Languages<span class="last-skill skills">Python, C, JavaScript, Ruby, Bash, HTML5, CSS3</span></h4>
+    </div>
+    <div class="skill-box">
+    <h4 class="headers">Cloud Servers<span class="last-skill skills">AWS, Heroku</span></h4>
+    </div>
+    <div class="skill-box">
+    <h4 class="headers">Databases<span class="last-skill skills">MySQL, PostgreSQL, MongoDB, SQLite</span></h4>
+    </div>
+    <div class="skill-box">
+    <h4 class="last-header">Client-Side</h4><span class="last-skill">Angular, D3.js, Bootstrap, Materialize</span>
+    </div>
+    <div class="skill-box">
+    <h4 class="last-header">Server-Side</h4><span class="last-skill">Rails, Django, Express, Flask, Node.js</span>
+    </div>
+    <div class="skill-box">
+    <h4 class="last-header">Miscellaneous</h4><span class="last-skill">OOP, HTTP, TCP/IP, REST, API development, Git, TDD,<br>Real-time applications, Single page applications, AJAX</span>
+    </div>
+</div>
+<div class="row">
+<div class="col s12" id="project-head">
+<div class="content-box" id="project-container">
+	<div class="jumbotron latest-proj grey lighten-1">
+		<h1 class="tech">Latest Projects</h1>
+	</div>
+  <div id="projects">
+    <ul>
+      <li class="example z-depth-4 grey lighten-2">
+        <img class="logo" src="images/mean-scaffold.png" alt="mean-scaffold" />
+          <p class="example-head">mean-scaffold</p>
+          <a href="https://github.com/sheldonbazzell/mean_scaffold" target="_blank">Source code.</a>
+          <a href="https://www.npmjs.com/package/mean-scaffold" target="_blank">Published npm package.</a>
+        <div class="content">
+          <p class="example-tech">Technologies: Bash, JavaScript, MongoDB, Angular, Express, Node</p>
+          <p class="example-project">This is a published NPM package that generates a customizable MEAN stack CRUD app from the command line in 20 seconds. This includes models of your choice, and associations are supported. For this project, my teammate and I split the development tasks evenly — including sharing responsibility in scripting server and client-side code. We learned to script in Bash for this project and published the package within four days. Package accumulated over 200 downloads in its first 3 days of publication.
+      </p>
+        </div>
+        <img src="images/mean-proj.png" class="screenshots2">
+      </li>
+      <li class="example z-depth-4 grey lighten-2">
+        <img class="logo" src="images/buyitnow.png" alt="BuyNow" />
+          <p class="example-head">BuyNow</p>
+          <a href="https://github.com/sheldonbazzell/ecommerce-site" target="_blank">Source code.</a>
+          <a href="http://54.244.33.63/" target="_blank">Deployed site.</a>
+        <div class="content">
+          <p class="example-tech">Technologies: Ruby on Rails, JavaScript, AJAX, PostgreSQL</p>
+          <p class="example-project">This is an e-commerce web app. The app allows a logged in user to filter products by category and search by keyword. On individual product pages, the user may add the item to his/her cart, and leave a review (if user has already purchased the item). For the project, I constructed the models, wrote the CRUD instance methods for the products, reviews, users, and sessions. This included the search algorithm in Ruby and the review functionality in Ruby and jQuery/AJAX.</p>
+        </div>
+        <img src="images/ecom-1.png" class="screenshots">
+        <img src="images/ecom-2.png" class="screenshots">
+        <img src="images/ecom-3.png" class="screenshots2">
+
+      </li>
+      <li class="example z-depth-4 grey lighten-2">
+        <div class="content">
+          <img class="logo" src="images/logo2.png" alt="Trips n Stops" />
+          <p class="example-head">Trips n Stops</p>
+          <a href="https://github.com/sheldonbazzell/trips-n-stops" target="_blank">Source code.</a>
+          <a href="http://35.164.63.109/" target="_blank">Deployed site.</a>
+          <p class="example-tech">Technologies: Python, JavaScript, AJAX, Django, SQLite3, Google Maps API, Yelp Fusion API</p>
+          <p class="example-project">This web app is designed to help plan a road trip, guiding you with Yelp's top content for each of your stops. The user can enter up to 23 stops along the road trip. For each location, the app will display the top 5 Yelp results for restaurants, hotels, and parks. I handled the Yelp API for this project, including writing the AJAX request, and the Python function to return the Yelp content to the user. The project was completed in 2 days.</p>
+        </div>
+        <img src="images/road-trip.png" class="screenshots2">
+
+      </li>
+      <li class="example z-depth-4 grey lighten-2">
+        <img class="logo logo3" src="images/shuriken.png" alt="Dojo Invaders" />
+          <p class="example-head">Dojo Space Invaders</p>
+          <a href="https://github.com/sheldonbazzell/dojo-space-invaders" target="_blank">Source code.</a>
+          <a href="http://dojo-invaders.surge.sh" target="_blank"> Play it.</a>
+        <div class="content">
+          <p class="example-tech">Technologies: JavaScript, HTML5, CSS3</p>
+          <p class="example-project">This game was written per an interview prompt. During the interview, I was instructed to build as many features as possible in a Space Invaders-esque game within 1 hour.
+          Following the interview, I continued to work on the game.</p>
+        </div>
+        <img src="images/shuriken-toss.png" class="screenshots2">
+      </li>
+      <li class="example z-depth-4 grey lighten-2">
+        <img class="logo" src="images/logo1.png" alt="Locker Reservations" />
+          <p class="example-head">Locker Reservations</p>
+            <a href="https://github.com/sheldonbazzell/hotel-concierge__bag-check" target="_blank">Source code.</a>
+        <div class="content">
+          <p class="example-tech">Technologies: Ruby on Rails, SQLite3</p>
+          <p class="example-project">This program is designed to manage locker reservations at a hotel concierge desk. Upon check-in, the concierge will use the program to generate the appropriate locker number. This number is printed to the browser, and is ready to print on the guest's ticket. At this time, the respective locker's availability is updated in the database from true to false. Upon check-out, this action is reversed, and the locker is once again available.
+          The program assigns the first locker that is available within the scope of that locker's size, and if necessary, moves up to the next size. This action does not work in reverse (no squeezing large bags into small lockers).</p>
+        </div>
+      </li>
+      <li class="example z-depth-4 grey lighten-2">
+        <img class="logo logo4" src="images/dojoboard.png" alt="Discussion Board" />
+          <p class="example-head">Dojo Discussion Board</p>
+          <a href="https://github.com/sheldonbazzell/dojo-discussion-board" target="_blank">Source code.</a>
+        <div class="content">
+          <p class="example-tech">Technologies: JavaScript, Node.js, Angular, Express, MongoDB, Mongoose</p>
+          <p class="example-project">This is a Stack Overflow mock website built utilizing the MEAN stack. Logged in users have the opportunity to view and add discussion topics. Users provide answers to topics, as well as comments on these answers. Lastly, again similar to the site it was drafted after, users may upvote and downvote posts.</p>
+        </div>
+      </li>
+      <li class="example z-depth-4 grey lighten-2">
+        <img class="logo logo3" src="images/portfolio.png" alt="Portfolio" />
+          <p class="example-head">My Portfolio</p>
+          <a href="https://github.com/sheldonbazzell/portfolio" target="_blank">Source code.</a>
+        <div class="content">
+          <p class="example-tech">Technologies: JavaScript, HTML5, CSS3</p>
+          <p class="example-project">My portfolio (this website) is written in JavaScript, HTML, and CSS.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="valign-wrapper col s12 grey lighten-5" id="foot">
+<div class="contact-box z-depth-4" id="contact-container">
+	<div class="valign sites grey lighten-2">
+
+    <h2 class="contact" id="email">
+    <a href="mailto:sheldon.bazzell@gmail.com" target="_top">
+      <img class="icon2" src="images/email.png" alt="Linked In" />
+    </a>
+      <span class="port">
+        <a href="mailto:sheldon.bazzell@gmail.com" target="_top">sheldon.bazzell@gmail.com</a>
+      </span>
+    </h2>
+
+    <h2 class="contact">
+      <a href="http://www.linkedin.com/in/sheldonbazzell" target="_blank">
+        <img class="icon" src="images/linkedin.png" alt="Linked In" />
+      </a>
+      <span class="port">
+        <a href="http://www.linkedin.com/in/sheldonbazzell" target="_blank">linkedin.com/in/sheldonbazzell</a>
+      </span>
+    </h2>
+
+    <h2 class="contact">
+      <a href="http://www.github.com/sheldonbazzell" target="_blank">
+        <img class="icon" src="images/github.png" alt="Github" />
+      </a>
+      <span class="port">
+        <a href="http://www.github.com/sheldonbazzell" target="_blank">github.com/sheldonbazzell</a>
+      </span>
+    </h2>
+
+	</div>
+</div>
+</div>
+</div>
+  <script>
+    // var input = ["Soft", "ware ", "Dev", "eloper"],
+    // char_count = 0,
+    // j = 6,
+    // k = 0;
+    // i = 4;
+    //   function sheldon(){
+    //     var char = input[char_count++],
+    //     last = input[3];
+    //     if(char === ' '){
+    //       char = "&nbsp;"
+    //     }
+    //     if(i == 1){
+    //       if(j > 0){
+    //         console.log(last);
+    //         document.getElementById('sheldon').innerHTML += last[k];
+    //         k++;
+    //         j--;
+    //       } else {
+    //         clearInterval(build);
+    //       }
+    //     }
+    //     if(i > 1){
+    //       document.getElementById('sheldon').innerHTML += char;
+    //       i--;
+    //     };
+    //   };
+    // var build = setInterval(sheldon,150);
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      $('.collapsible').collapsible();
+      $(document).on('scroll', function(){
+        $('#top-link').show();
+      })
+      $("#top-link").click(function(){
+        $(this).css('display', 'none');
+      })
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    })
+  </script>
+  </body>
+  </html>
