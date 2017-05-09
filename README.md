@@ -1,1 +1,1 @@
-My portfolio -- view at sheldonbazzell.github.io
+My portfolio -- view at sheldonbazzell.github.io/portfolio
