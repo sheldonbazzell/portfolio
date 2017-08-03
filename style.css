@@ -11,9 +11,13 @@ body {
     border-radius: 0px !important;
     font-family: 'Ek Mukta', sans-serif;
     font-weight: bold;
-    padding: 0.7% 0;
-    line-height: 10%;
+    display: table;
 }
+
+	#head-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
 
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
     height: 75px;
