@@ -183,6 +183,7 @@ th, td {
 .tech {
 	margin: 0 auto;
 	color: black;
+	text-align: center;
 	font-size: 4.5vw !important;
 }
 
