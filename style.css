@@ -166,10 +166,19 @@ th, td {
 		font-size: 7vw !important;
 	}
 
-#projects {
-	margin: 0 auto;
-	width: 100%;
+#project-head {
+	display: flex;
+	justify-content: center;
 }
+
+	#project-list {
+		width: 80%;
+	}
+
+	#projects {
+		margin: 0 auto;
+		width: 100%;
+	}
 
 .tech {
 	margin: 0 auto;
@@ -325,7 +334,8 @@ ul {
 
 	 .example {
 	 	width: 100%;
-	 	color: black;
+		color: black;
+		text-align: center;
 	 	padding-bottom: 2%;
 	 	margin: 0 auto 30px;
 	 }
