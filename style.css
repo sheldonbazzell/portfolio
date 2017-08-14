@@ -51,9 +51,6 @@ a.navbar-brand {
 	color: white !important;
 }
 
-.pull-right {
-	width: 38%;
-}
 
 .navbar-right li {
 	margin-right: 3%;
@@ -91,19 +88,18 @@ a.navbar-brand {
 }
 
 .row1 {
-	background-color: #e0e0e0
+	background-color: #e0e0e0;
 }
 
 #skills-head {
 	padding-bottom: 25px !important;
-	margin-top: 3%;
+	margin-top: 10vh;
 }
 
 .jumbotron {
 	width: 100%;
     border-radius: 0px !important;
 	color: black;
-	/*background-color: white !important;*/
 	padding-left: 1.5% !important;
 	padding-right: 1.5% !important;
 	padding: 20px 0 30px !important;
@@ -155,25 +151,20 @@ th, td {
 	margin-left: 95%;
 }
 
-#dev {
-	color: black;
-	font-size: 3.75vw;
-	margin-top: 0;
-	margin-bottom: 0;
-}
+	#dev {
+		color: black;
+		font-size: 5vw !important;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
-#name {
-	margin-bottom: 15px;
-	margin-top: 10%;
-	line-height: 1;
-	color: black;
-	text-align: center;
-	font-size: 7vw !important;
-}
-
-#dev {
-	font-size: 5vw !important;
-}
+	#name {
+		margin-bottom: 15px;
+		line-height: 1;
+		color: black;
+		text-align: center;
+		font-size: 7vw !important;
+	}
 
 #projects {
 	margin: 0 auto;
@@ -183,7 +174,7 @@ th, td {
 .tech {
 	margin: 0 auto;
 	color: black;
-	font-size: 6.2vw !important;
+	font-size: 4.5vw !important;
 }
 
 #skill-head {
@@ -191,18 +182,18 @@ th, td {
 	margin: 0 auto;
 	width: 80%;
 	text-align: center;
-	font-size: 6vw !important;
 }
 
 #hello-col{
 	text-align: center;
 }
+
 .us {
 	color: black;
 	text-align: left !important;
 	padding: 2%;
 	width: 80%;
-	margin: -3% auto 0;
+	margin: 0 auto;
 	line-height: 1.8;
 	font-size: 1.5vw;
 }
@@ -211,20 +202,26 @@ th, td {
 	margin-top: 1%;
 }
 
-#headshot-col {
-	display: block !important;
+#hello-col, #head {
 	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-#hello-col {
-	width: 100%;
-	display: block;
+#headshot-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#headshot {
-	margin: 1% auto 5%;
-	width: 65%;
-}
+	#headshot {
+		max-width: 30%;
+		max-height: 30%;
+		border-radius: 50%;
+	}
 
 #skills-go {
 	height: 50px;
@@ -291,7 +288,6 @@ th, td {
 .content-box { 
 	text-align: center;
 	width: 95%;
-	margin: 5% auto 2%;
  }
 
  h1 {
@@ -382,7 +378,7 @@ ul {
 	 }
 
 	 .example-head {
-	 	font-size: 6vw;
+	 	font-size: 3.5vw;
 	 	width: 80%;
 	 	margin: 0 auto;
 	 	text-align: center;
@@ -403,9 +399,10 @@ ul {
 
 .contact-box {
 	width: 70%;
-	margin: 8% auto 13.5%;
+	display: flex;
 	text-align: left;
 }
+
 	.sites {
 		color: black;
 		text-align: center;
@@ -449,7 +446,9 @@ ul {
 		}
 
 	#foot {
-		margin-bottom: -20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		height:100vh;
 	}
 
@@ -459,6 +458,14 @@ ul {
 	}
 }
 
+@media screen and (min-width: 769px) {
+	.navbar-nav {
+		width: auto;
+		position: absolute;
+		right: 5vw;
+	}
+}
+ 
 @media (max-width: 768px) {
   #name {
   	margin-top: 20%;

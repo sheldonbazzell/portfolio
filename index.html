@@ -16,26 +16,26 @@
 <nav class="navbar navbar-default navbar-fixed-top z-depth-1" id="top">
   <div class="container" id="head-container">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-wrapper">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand valign" href="#top">SB</a>
     </div>
-    <div class="navbar-collapse collapse">
+    <div id="navbar-collapse-wrapper" class="navbar-collapse collapse">
         <ul class="nav navbar-nav pull-right">
             <li>
-              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="#pad">Skills</a>
+              <a class="toggle-ham" href="#pad">Skills</a>
             </li>
             <li>
-              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="#project-head">Projects</a>
+              <a class="toggle-ham" href="#project-head">Projects</a>
             </li>
             <li>
-              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact-container">Contact</a>
+              <a class="toggle-ham" href="#contact-container">Contact</a>
             </li>
             <li>
-              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="https://drive.google.com/file/d/0B0zYpkuiznx-UU1IaU16RGRkczQ/view?usp=sharing" target="_blank">Resume</a>
+              <a class="toggle-ham" href="https://drive.google.com/file/d/0B0zYpkuiznx-UU1IaU16RGRkczQ/view?usp=sharing" target="_blank">Resume</a>
             </li>
         </ul>
     </div>
@@ -45,11 +45,13 @@
 <div class="row row1 grey lighten-5">
   <a id="top-link" href="#top">Top ^</a>
   <div class="col s12" id="head">
-    <div class="content-box">
+    <div id="name-wrapper" class="content-box">
       <h1 id="name">Sheldon Bazzell</h1>
       <h2 id="dev">Software Engineer</h2>
     </div>
-    <img src="images/hs2.JPG" id="headshot" class="z-depth-4 materialboxed" alt="Sheldon's Headshot" />
+    <div id="headshot-wrapper">
+      <img src="images/hs2.JPG" id="headshot" class="z-depth-4" alt="Sheldon's Headshot" />
+    </div>
   </div>
   <div class="col s12" id="hello-col">
     <div class="us z-depth-3 grey lighten-2">
@@ -75,7 +77,6 @@
   <div class="row row1 grey lighten-5">
     <div class="col s12" id="headshot-col">
       <div id="pad"></div>
-      <div id="skills-go"></div>
     </div>
   </div>
   <div id="skills-head" class="jumbotron valign-wrapper grey lighten-1">
@@ -160,31 +161,12 @@
         <img src="images/shuriken-toss.png" class="screenshots2">
       </li>
       <li class="example z-depth-4 grey lighten-2">
-        <img class="logo" src="images/logo1.png" alt="Locker Reservations" />
-          <p class="example-head">Locker Reservations</p>
-            <a href="https://github.com/sheldonbazzell/hotel-concierge__bag-check" target="_blank">Source code.</a>
-        <div class="content">
-          <p class="example-tech">Technologies: Ruby on Rails, SQLite3</p>
-          <p class="example-project">This program is designed to manage locker reservations at a hotel concierge desk. Upon check-in, the concierge will use the program to generate the appropriate locker number. This number is printed to the browser, and is ready to print on the guest's ticket. At this time, the respective locker's availability is updated in the database from true to false. Upon check-out, this action is reversed, and the locker is once again available.
-          The program assigns the first locker that is available within the scope of that locker's size, and if necessary, moves up to the next size. This action does not work in reverse (no squeezing large bags into small lockers).</p>
-        </div>
-      </li>
-      <li class="example z-depth-4 grey lighten-2">
         <img class="logo logo4" src="images/dojoboard.png" alt="Discussion Board" />
           <p class="example-head">Dojo Discussion Board</p>
           <a href="https://github.com/sheldonbazzell/dojo-discussion-board" target="_blank">Source code.</a>
         <div class="content">
           <p class="example-tech">Technologies: JavaScript, Node.js, Angular, Express, MongoDB, Mongoose</p>
           <p class="example-project">This is a Stack Overflow mock website built utilizing the MEAN stack. Logged in users have the opportunity to view and add discussion topics. Users provide answers to topics, as well as comments on these answers. Lastly, again similar to the site it was drafted after, users may upvote and downvote posts.</p>
-        </div>
-      </li>
-      <li class="example z-depth-4 grey lighten-2">
-        <img class="logo logo3" src="images/portfolio.png" alt="Portfolio" />
-          <p class="example-head">My Portfolio</p>
-          <a href="https://github.com/sheldonbazzell/portfolio" target="_blank">Source code.</a>
-        <div class="content">
-          <p class="example-tech">Technologies: JavaScript, HTML5, CSS3</p>
-          <p class="example-project">My portfolio (this website) is written in JavaScript, HTML, and CSS.</p>
         </div>
       </li>
     </ul>
@@ -231,12 +213,10 @@
 </div>
   <script>
     $(document).ready(function(){
-      $('.button-collapse').sideNav();
-      $('.collapsible').collapsible();
-      $(document).on('scroll', () => {
+      $(document).on('scroll', function(){
         $('#top-link').show();
       })
-      $('.toggle-ham').click( () => {
+      $('.toggle-ham').click(function() {
         console.log('clicked')
         $('.hamburger').trigger('click')
       })
