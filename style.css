@@ -74,6 +74,10 @@ a.navbar-brand {
 	margin: 0;
 }
 
+.project-row {
+	min-height: 100vh;
+}
+
 .container {
 	width: 100%;
 }
@@ -168,8 +172,13 @@ th, td {
 	}
 
 #project-head {
-	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
 	justify-content: center;
+	min-height: 100vh;
 }
 
 	#project-list {
@@ -212,7 +221,6 @@ th, td {
 	align-items: center;
 	justify-content: space-around;
 	display: flex;
-	/* height: 70vh; */
 	margin: 0 auto;
 	line-height: 1.8;
 	font-size: 1.5vw;
@@ -262,6 +270,10 @@ th, td {
 	padding: 1%;
 }
 
+.latest-proj {
+	margin-top: 0;
+}
+
 #my-skills {
 	padding: 2%;
 	width: 80%;
@@ -282,7 +294,7 @@ th, td {
 }
 
 .headers {
-	font-size: 2.7vw;
+	font-size: 3vw;
 	width: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -355,6 +367,19 @@ ul {
 	list-style-type: none;
  	margin: 0 auto;
 	padding-left: 0px;
+}
+
+.project-collapse {
+	width: 100%;
+	background: #e0e0e0 !important;
+	height: 50px;
+	color: black;
+	margin-bottom: 2.5%;
+	text-align: center;
+}
+
+.project-collapse:hover {
+	color: black;
 }
 
 	 .example {
@@ -434,6 +459,7 @@ ul {
 
 .contact-box {
 	width: 70%;
+	height: 55vh;
 	display: flex;
 	text-align: left;
 }
@@ -444,6 +470,16 @@ ul {
 		background-color: #9e9e9e;
 		padding-top: 0.75%;
 		padding-bottom: 0.75%;
+		display: -webkit-box;
+		display: -moz-box;
+		flex-direction: column;
+		justify-content: space-around;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	}
+
+	.valign-wrapper .valign {
+		display: flex;
 	}
 
 	.icon {
@@ -561,10 +597,6 @@ ul {
 		display: none !important;
    }
 
-   #skill-head {
-	   margin-top: 6%;
-   }
-
    #top-link {
 		display: none !important;
 		color: black;
@@ -591,10 +623,6 @@ ul {
 	height: 30px;
 }
 
-#skills-head {
-	margin-top: 10%;
-}
-
 	.jumbotron {
 		margin-top: 19%;
 		padding: 3% 0;
@@ -602,16 +630,22 @@ ul {
 
 	#my-skills {
 		width: 88%;
+		height: 55vh;
+		display: -webkit-box;
+		display: -moz-box;
+		flex-direction: column;
+		justify-content: space-around;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	}
 
 	#foot {
-		height: 62vh !important;
+		height: 100vh;
 	}
 
 	.last-skill, .last-header {
 		display: block;
 		margin-top: 2%;
-		vertical-align: top !important;
 	}
 
 	.headers {
@@ -630,7 +664,7 @@ ul {
 	}
 
 	.last-skill {
-		font-size: 3vw;
+		font-size: 4vw;
 		display: block;
 	}
 
