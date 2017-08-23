@@ -201,11 +201,24 @@ th, td {
 .us {
 	color: black;
 	text-align: left !important;
-	padding: 2%;
+	padding: 5%;
 	width: 80%;
+	display: -webkit-box;
+	display: -moz-box;
+	flex-direction: column;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	/* height: 70vh; */
 	margin: 0 auto;
 	line-height: 1.8;
 	font-size: 1.5vw;
+}
+
+.us p {
+	margin-bottom: 5%;
 }
 
 #blog-mention {
@@ -239,7 +252,7 @@ th, td {
 }
 
 #my-skills {
-	padding: 1% 2%;
+	padding: 2%;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -534,7 +547,11 @@ ul {
 	}
 
    .navs {
-   	display: none !important;
+		display: none !important;
+   }
+
+   #skill-head {
+	   margin-top: 6%;
    }
 
    #top-link {
@@ -546,6 +563,7 @@ ul {
 	.us {
 		line-height: 1.8;
 		font-size: 3vw;
+		height: 70vh;
 		width: 90%;
 	}
 
