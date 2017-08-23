@@ -92,8 +92,8 @@ a.navbar-brand {
 }
 
 #skills-head {
+	margin-top: 0;
 	padding-bottom: 25px !important;
-	margin-top: 10vh;
 }
 
 .jumbotron {
@@ -136,8 +136,9 @@ th, td {
 	line-height: 1.6;
 }
 
-#name:hover {
-	text-shadow: 2px 2px 4px grey;
+#name {
+	width: 80%;
+	margin: 0 auto;
 }
 
 #top-link {
@@ -245,6 +246,16 @@ th, td {
 		max-height: 30%;
 		border-radius: 50%;
 	}
+
+#skills-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	flex-direction: column;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+	height: 100vh;
+}
 
 #skills-go {
 	height: 50px;
@@ -575,13 +586,14 @@ ul {
 		margin: 5% auto 10%;
 	}
 
-	#skills-go {
-		height: 30px;
-	}
 
-	#skills-head {
-		margin-top: 10%;
-	}
+#skills-go {
+	height: 30px;
+}
+
+#skills-head {
+	margin-top: 10%;
+}
 
 	.jumbotron {
 		margin-top: 19%;
