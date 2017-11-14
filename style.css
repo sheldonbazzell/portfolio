@@ -51,9 +51,6 @@ a.navbar-brand {
 	color: white !important;
 }
 
-.pull-right {
-	width: 38%;
-}
 
 .navbar-right li {
 	margin-right: 3%;
@@ -70,11 +67,17 @@ a.navbar-brand {
 .navbar-nav li a {
 	color: white;
 	font-weight: bold;
-	font-size: 1.3vw;
+	font-size: 1.2rem;
 }
+
+#project-conatiner { margin-top: 100px; }
 
 .row {
 	margin: 0;
+}
+
+.project-row {
+	min-height: 100vh;
 }
 
 .container {
@@ -91,19 +94,18 @@ a.navbar-brand {
 }
 
 .row1 {
-	background-color: #e0e0e0
+	background-color: #e0e0e0;
 }
 
 #skills-head {
+	margin-top: 0;
 	padding-bottom: 25px !important;
-	margin-top: 3%;
 }
 
 .jumbotron {
 	width: 100%;
     border-radius: 0px !important;
 	color: black;
-	/*background-color: white !important;*/
 	padding-left: 1.5% !important;
 	padding-right: 1.5% !important;
 	padding: 20px 0 30px !important;
@@ -140,8 +142,9 @@ th, td {
 	line-height: 1.6;
 }
 
-#name:hover {
-	text-shadow: 2px 2px 4px grey;
+#name {
+	width: 80%;
+	margin: 0 auto;
 }
 
 #top-link {
@@ -155,35 +158,45 @@ th, td {
 	margin-left: 95%;
 }
 
-#dev {
-	color: black;
-	font-size: 3.75vw;
-	margin-top: 0;
-	margin-bottom: 0;
+	#dev {
+		color: black;
+		font-size: 5vw !important;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	#name {
+		margin-bottom: 15px;
+		line-height: 1;
+		color: black;
+		text-align: center;
+		font-size: 7vw !important;
+	}
+
+#project-head {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
 }
 
-#name {
-	margin-bottom: 15px;
-	margin-top: 10%;
-	line-height: 1;
-	color: black;
-	text-align: center;
-	font-size: 7vw !important;
-}
+	#project-list {
+		width: 80%;
+	}
 
-#dev {
-	font-size: 5vw !important;
-}
-
-#projects {
-	margin: 0 auto;
-	width: 100%;
-}
+	#projects {
+		margin: 0 auto;
+		width: 100%;
+	}
 
 .tech {
 	margin: 0 auto;
 	color: black;
-	font-size: 6.2vw !important;
+	text-align: center;
+	font-size: 4.5vw !important;
 }
 
 #skill-head {
@@ -191,39 +204,67 @@ th, td {
 	margin: 0 auto;
 	width: 80%;
 	text-align: center;
-	font-size: 6vw !important;
 }
 
 #hello-col{
 	text-align: center;
 }
+
 .us {
 	color: black;
 	text-align: left !important;
-	padding: 2%;
+	padding: 5%;
 	width: 80%;
-	margin: -3% auto 0;
+	display: -webkit-box;
+	display: -moz-box;
+	flex-direction: column;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: space-around;
+	display: flex;
+	margin: 0 auto;
 	line-height: 1.8;
 	font-size: 1.5vw;
+}
+
+.us p {
+	margin-bottom: 5%;
+	font-size: 1.2rem;
 }
 
 #blog-mention {
 	margin-top: 1%;
 }
 
-#headshot-col {
-	display: block !important;
+#hello-col, #head {
 	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-#hello-col {
-	width: 100%;
-	display: block;
+#headshot-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#headshot {
-	margin: 1% auto 5%;
-	width: 65%;
+	#headshot {
+		max-width: 30%;
+		max-height: 30%;
+		border-radius: 50%;
+	}
+
+#skills-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	flex-direction: column;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+	height: 100vh;
 }
 
 #skills-go {
@@ -231,8 +272,12 @@ th, td {
 	padding: 1%;
 }
 
+.latest-proj {
+	margin-top: 0;
+}
+
 #my-skills {
-	padding: 1% 2%;
+	padding: 2%;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -251,7 +296,7 @@ th, td {
 }
 
 .headers {
-	font-size: 2.7vw;
+	font-size: 3vw;
 	width: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -291,7 +336,6 @@ th, td {
 .content-box { 
 	text-align: center;
 	width: 95%;
-	margin: 5% auto 2%;
  }
 
  h1 {
@@ -327,9 +371,23 @@ ul {
 	padding-left: 0px;
 }
 
+.project-collapse {
+	width: 100%;
+	background: #e0e0e0 !important;
+	height: 50px;
+	color: black;
+	margin-bottom: 2.5%;
+	text-align: center;
+}
+
+.project-collapse:hover {
+	color: black;
+}
+
 	 .example {
 	 	width: 100%;
-	 	color: black;
+		color: black;
+		text-align: center;
 	 	padding-bottom: 2%;
 	 	margin: 0 auto 30px;
 	 }
@@ -383,7 +441,7 @@ ul {
 	 }
 
 	 .example-head {
-	 	font-size: 6vw;
+	 	font-size: 3.5vw;
 	 	width: 80%;
 	 	margin: 0 auto;
 	 	text-align: center;
@@ -404,15 +462,27 @@ ul {
 
 .contact-box {
 	width: 70%;
-	margin: 8% auto 13.5%;
+	height: 55vh;
+	display: flex;
 	text-align: left;
 }
+
 	.sites {
 		color: black;
 		text-align: center;
 		background-color: #9e9e9e;
 		padding-top: 0.75%;
 		padding-bottom: 0.75%;
+		display: -webkit-box;
+		display: -moz-box;
+		flex-direction: column;
+		justify-content: space-around;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	}
+
+	.valign-wrapper .valign {
+		display: flex;
 	}
 
 	.icon {
@@ -450,7 +520,9 @@ ul {
 		}
 
 	#foot {
-		margin-bottom: -20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		height:100vh;
 	}
 
@@ -460,6 +532,14 @@ ul {
 	}
 }
 
+@media screen and (min-width: 769px) {
+	.navbar-nav {
+		width: auto;
+		position: absolute;
+		right: 5vw;
+	}
+}
+ 
 @media (max-width: 768px) {
   #name {
   	margin-top: 20%;
@@ -517,7 +597,7 @@ ul {
 	}
 
    .navs {
-   	display: none !important;
+		display: none !important;
    }
 
    #top-link {
@@ -529,6 +609,7 @@ ul {
 	.us {
 		line-height: 1.8;
 		font-size: 3vw;
+		height: 70vh;
 		width: 90%;
 	}
 
@@ -540,13 +621,10 @@ ul {
 		margin: 5% auto 10%;
 	}
 
-	#skills-go {
-		height: 30px;
-	}
 
-	#skills-head {
-		margin-top: 10%;
-	}
+#skills-go {
+	height: 30px;
+}
 
 	.jumbotron {
 		margin-top: 19%;
@@ -555,16 +633,22 @@ ul {
 
 	#my-skills {
 		width: 88%;
+		height: 55vh;
+		display: -webkit-box;
+		display: -moz-box;
+		flex-direction: column;
+		justify-content: space-around;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	}
 
 	#foot {
-		height: 62vh !important;
+		height: 100vh;
 	}
 
 	.last-skill, .last-header {
 		display: block;
 		margin-top: 2%;
-		vertical-align: top !important;
 	}
 
 	.headers {
@@ -583,7 +667,7 @@ ul {
 	}
 
 	.last-skill {
-		font-size: 3vw;
+		font-size: 4vw;
 		display: block;
 	}
 

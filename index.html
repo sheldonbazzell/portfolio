@@ -16,23 +16,23 @@
 <nav class="navbar navbar-default navbar-fixed-top z-depth-1" id="top">
   <div class="container" id="head-container">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-wrapper">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand valign" href="#top">SB</a>
     </div>
-    <div class="navbar-collapse collapse">
+    <div id="navbar-collapse-wrapper" class="navbar-collapse collapse">
         <ul class="nav navbar-nav pull-right">
             <li>
-              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="#pad">Skills</a>
+              <a class="toggle-ham" href="#pad">Skills</a>
             </li>
             <li>
-              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="#project-head">Projects</a>
+              <a class="toggle-ham" href="#project-head">Projects</a>
             </li>
             <li>
-              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact-container">Contact</a>
+              <a class="toggle-ham" href="#contact-container">Contact</a>
             </li>
             <li>
               <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="https://drive.google.com/file/d/0B0zYpkuiznx-UU1IaU16RGRkczQ/view?usp=sharing" rel="noopener noreferrer" target="_blank">Resume</a>
@@ -45,11 +45,13 @@
 <div class="row row1 grey lighten-5">
   <a id="top-link" href="#top">Top ^</a>
   <div class="col s12" id="head">
-    <div class="content-box">
+    <div id="name-wrapper" class="content-box">
       <h1 id="name">Sheldon Bazzell</h1>
       <h2 id="dev">Software Engineer</h2>
     </div>
-    <img src="images/hs2.JPG" id="headshot" class="z-depth-4 materialboxed" alt="Sheldon's Headshot" />
+    <div id="headshot-wrapper">
+      <img src="images/hs2.JPG" id="headshot" class="z-depth-4" alt="Sheldon's Headshot" />
+    </div>
   </div>
   <div class="col s12" id="hello-col">
     <div class="us z-depth-3 grey lighten-2">
@@ -62,17 +64,16 @@
         Have a spot on your team or just want to chat? 
         <a href="#contact-container">Let's get in touch!</a>
       </p>
-        <p id="blog-mention"> 
+        <!-- <p id="blog-mention"> 
           Want to know <i>me</i> a little better? If I'm not picking up a new technology, I'm probably on the road, 
           <a rel="noopener noreferrer" target="_blank" href="http://brewingadventure.com">traveling with my wife.</a> It's in progress; not to worry, the content is being generated.
-      </p>
+      </p> -->
     </div>
   </div>
 </div>
   <div class="row row1 grey lighten-5">
     <div class="col s12" id="headshot-col">
       <div id="pad"></div>
-      <div id="skills-go"></div>
     </div>
   </div>
   <div id="skills-head" class="jumbotron valign-wrapper grey lighten-1">
@@ -86,7 +87,7 @@
     <h4 class="headers">Databases<span class="last-skill skills">MySQL, PostgreSQL, MongoDB</span></h4>
     </div>
     <div class="skill-box">
-    <h4 class="last-header">Client-Side</h4><span class="last-skill">Angular, flux (ngrx/store), Bootstrap</span>
+    <h4 class="last-header">Client-Side</h4><span class="last-skill">Angular, flux (ngrx/store), Rxjs, Bootstrap</span>
     </div>
     <div class="skill-box">
     <h4 class="last-header">Server-Side</h4><span class="last-skill">Rails, Django, Express, Flask, Node.js</span>
@@ -95,15 +96,16 @@
     <h4 class="last-header">Other</h4><span class="last-skill">HTTP, TCP/IP, REST API development, OOP, TDD,<br>Real-time applications, Single page applications, AJAX</span>
     </div>
 </div>
-<div class="row">
+<div class="project-row row">
 <div class="col s12" id="project-head">
-<div class="content-box" id="project-container">
+<div id="project-container">
 	<div class="jumbotron latest-proj grey lighten-1">
 		<h1 class="tech">Latest Projects</h1>
 	</div>
   <div id="projects">
     <ul>
-      <li class="example z-depth-4 grey lighten-2">
+      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj1">The Bread Project</button>
+      <li id="proj1" class="collapse example z-depth-4 grey lighten-2">
         <img class="logo" src="images/cropped-tbp-logo.jpg" alt="TBP">
         <p class="example-head">The Bread Project</p>
         <a href="https://github.com/Opportunity-Hack-San-Jose-2017/TBP-Creating_Opportunity_Ecosystem" rel="noopener noreferrer" target="_blank">Source code.</a>
@@ -118,7 +120,8 @@
         <img src="images/tbp1.png" class="screenshots2">
         <img src="images/tbp2.png" class="screenshots2">
       </li>
-      <li class="example z-depth-4 grey lighten-2">
+      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj2">mean-scaffold</button>
+      <li id="proj2" class="collapse example z-depth-4 grey lighten-2">
         <img class="logo" src="images/mean-scaffold.png" alt="mean-scaffold" />
         <p class="example-head">mean-scaffold</p>
         <a href="https://github.com/sheldonbazzell/mean_scaffold" rel="noopener noreferrer" target="_blank">Source code.</a>
@@ -131,7 +134,8 @@
         </div>
         <img src="images/mean-proj.png" class="screenshots2">
       </li>
-      <li class="example z-depth-4 grey lighten-2">
+      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj3">Trips n Stops</button> 
+      <li id="proj3" class="collapse example z-depth-4 grey lighten-2">
         <div class="content">
           <img class="logo" src="images/logo2.png" alt="Trips n Stops" />
           <p class="example-head">Trips n Stops</p>
@@ -141,9 +145,9 @@
           <p class="example-project">This web app is designed to help plan a road trip, guiding you with Yelp's top content for each of your stops. The user can enter up to 23 stops along the road trip. For each location, the app will display the top 5 Yelp results for restaurants, hotels, and parks. I handled the Yelp API for this project, including writing the AJAX request, and the Python function to return the Yelp content to the user. The project was completed in 2 days.</p>
         </div>
         <img src="images/road-trip.png" class="screenshots2">
-
       </li>
-      <li class="example z-depth-4 grey lighten-2">
+      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj4">Dojo Invaders</button> 
+      <li id="proj4" class="collapse example z-depth-4 grey lighten-2">
         <img class="logo logo3" src="images/shuriken.png" alt="Dojo Invaders" />
           <p class="example-head">Dojo Space Invaders</p>
           <a href="https://github.com/sheldonbazzell/dojo-space-invaders" rel="noopener noreferrer" target="_blank">Source code.</a>
@@ -199,14 +203,12 @@
 </div>
   <script>
     $(document).ready(function(){
-      $('.button-collapse').sideNav();
-      $('.collapsible').collapsible();
-      $(document).on('scroll', () => {
+      $(document).on('scroll', function(){
         $('#top-link').show();
       })
-      $('.toggle-ham').click( () => {
+      $('.toggle-ham').click(function() {
         console.log('clicked')
-        $('.hamburger').trigger('click')
+        $('.navbar-toggle').trigger('click')
       })
       $("#top-link").click(() => {
         $(this).css('display', 'none');
