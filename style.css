@@ -77,7 +77,7 @@ a.navbar-brand {
 }
 
 .project-row {
-	min-height: 100vh;
+	margin-top: 100px;
 }
 
 .container {
@@ -103,6 +103,7 @@ a.navbar-brand {
 }
 
 .jumbotron {
+	background: transparent;
 	width: 100%;
     border-radius: 0px !important;
 	color: black;
@@ -180,7 +181,7 @@ th, td {
 	display: -webkit-flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 100vh;
+	margin-top: 100px;
 }
 
 	#project-list {
@@ -245,6 +246,19 @@ th, td {
 	flex-direction: column;
 }
 
+#lnk1 {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#proj-anchor, #skills-anchor {
+	position: relative;
+	top: -65px;
+}
+
 #headshot-wrapper {
 	display: flex;
 	justify-content: center;
@@ -264,7 +278,6 @@ th, td {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	justify-content: center;
-	height: 100vh;
 }
 
 #skills-go {
@@ -533,17 +546,33 @@ ul {
 }
 
 @media screen and (min-width: 769px) {
+
 	.navbar-nav {
 		width: auto;
-		position: absolute;
-		right: 5vw;
+		position: relative;
 	}
+
+
 }
  
 @media (max-width: 768px) {
-  #name {
-  	margin-top: 20%;
-  }
+
+	#ham {
+		position: absolute;
+		right: 10px;
+		margin: 0;
+	}
+
+	.navbar-header {
+		height: 75px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	#name {
+		margin-top: 20%;
+	}
 
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border-color: #e7e7e7;
@@ -551,7 +580,8 @@ ul {
 	}
 
 	.pull-right {
-		width: 50%;
+		width: auto;
+		margin-left: auto;
 	}
 
 	.navbar-default .navbar-nav>li>a {
@@ -584,7 +614,7 @@ ul {
 	}
 
 	a.navbar-brand {
-		font-size: 7vw !important;
+		font-size: 2.5rem !important;
 		color: white !important;
 	}
 
@@ -609,7 +639,6 @@ ul {
 	.us {
 		line-height: 1.8;
 		font-size: 3vw;
-		height: 70vh;
 		width: 90%;
 	}
 
