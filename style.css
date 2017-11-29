@@ -209,11 +209,13 @@ th, td {
 	text-align: center;
 }
 
+.row .col { padding:  0 !important; }
+
 .us {
 	color: black;
 	text-align: left !important;
 	padding: 5%;
-	width: 80%;
+	width: 100%;
 	display: -webkit-box;
 	display: -moz-box;
 	flex-direction: column;
@@ -227,8 +229,9 @@ th, td {
 	font-size: 1.5vw;
 }
 
-.us p {
+.ninety {
 	margin: 10% 5%;
+	width: 90%;
 }
 
 #blog-mention {
@@ -430,6 +433,8 @@ ul {
 		width: 85%;
 	}
 
+	.center { text-align: center !important; }
+
 	.example-tech {
 		text-align: center;
 	 	margin: 10px 0 0 0;
@@ -610,7 +615,7 @@ ul {
 		line-height: 1.8;
 		font-size: 3vw;
 		height: 70vh;
-		width: 90%;
+		width: 100%;
 	}
 
 	#name {
