@@ -67,7 +67,14 @@ a.navbar-brand {
 .navbar-nav li a {
 	color: white;
 	font-weight: bold;
-	font-size: 1.3vw;
+	font-size: 1.2rem;
+}
+
+#project-container {
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .row {
@@ -75,7 +82,7 @@ a.navbar-brand {
 }
 
 .project-row {
-	min-height: 100vh;
+	margin-top: 0;
 }
 
 .container {
@@ -96,11 +103,12 @@ a.navbar-brand {
 }
 
 #skills-head {
-	margin-top: 56px;
+	margin-top: 0;
 	padding-bottom: 25px !important;
 }
 
 .jumbotron {
+	background: transparent;
 	width: 100%;
     border-radius: 0px !important;
 	color: black;
@@ -179,6 +187,7 @@ th, td {
 	flex-direction: column;
 	justify-content: center;
 	min-height: calc(100vh - 56px);
+	margin-top: 100px;
 }
 
 	#project-list {
@@ -215,14 +224,14 @@ th, td {
 	color: black;
 	text-align: left !important;
 	padding: 5%;
+	height: 100%;
 	width: 100%;
 	display: -webkit-box;
 	display: -moz-box;
 	flex-direction: column;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	display: flex;
 	margin: 0 auto;
 	line-height: 1.8;
@@ -232,6 +241,7 @@ th, td {
 .ninety {
 	margin: 10% 5%;
 	width: 90%;
+	font-size: 1.5rem;
 }
 
 #blog-mention {
@@ -247,6 +257,19 @@ th, td {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+#lnk1 {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#proj-anchor, #skills-anchor {
+	position: relative;
+	top: -65px;
 }
 
 #headshot-wrapper {
@@ -268,7 +291,6 @@ th, td {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	justify-content: center;
-	height: 100vh;
 }
 
 #skills-go {
@@ -401,6 +423,7 @@ ul {
 		max-width: 40%;
 		display: inline-block;
 		vertical-align: top;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	}
 
 	.screenshots2 {
@@ -538,17 +561,33 @@ ul {
 }
 
 @media screen and (min-width: 769px) {
+
 	.navbar-nav {
 		width: auto;
-		position: absolute;
-		right: 5vw;
+		position: relative;
 	}
+
+
 }
  
 @media (max-width: 768px) {
-  #name {
-  	margin-top: 20%;
-  }
+
+	#ham {
+		position: absolute;
+		right: 10px;
+		margin: 0;
+	}
+
+	.navbar-header {
+		height: 75px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	#name {
+		margin-top: 20%;
+	}
 
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border-color: #e7e7e7;
@@ -556,7 +595,8 @@ ul {
 	}
 
 	.pull-right {
-		width: 50%;
+		width: auto;
+		margin-left: auto;
 	}
 
 	.navbar-default .navbar-nav>li>a {
@@ -589,7 +629,7 @@ ul {
 	}
 
 	a.navbar-brand {
-		font-size: 7vw !important;
+		font-size: 2.5rem !important;
 		color: white !important;
 	}
 
@@ -614,7 +654,7 @@ ul {
 	.us {
 		line-height: 1.8;
 		font-size: 3vw;
-		height: 70vh;
+		height: 100vh;
 		width: 100%;
 	}
 

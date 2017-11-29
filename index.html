@@ -16,26 +16,26 @@
 <nav class="navbar navbar-default navbar-fixed-top z-depth-1" id="top">
   <div class="container" id="head-container">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-wrapper">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand valign" href="#top">SB</a>
+      <a class="navbar-brand valign" href="#top">SB</a>
+      <button id="ham" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-wrapper">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
     </div>
     <div id="navbar-collapse-wrapper" class="navbar-collapse collapse">
         <ul class="nav navbar-nav pull-right">
             <li>
-              <a class="toggle-ham" href="#pad">Skills</a>
+              <a class="toggle-ham" href="#skills-anchor">Skills</a>
             </li>
             <li>
-              <a class="toggle-ham" href="#project-head">Projects</a>
+              <a class="toggle-ham" href="#proj-anchor">Projects</a>
             </li>
             <li>
               <a class="toggle-ham" href="#contact-container">Contact</a>
             </li>
             <li>
-              <a class="toggle-ham" href="https://drive.google.com/file/d/0B0zYpkuiznx-UU1IaU16RGRkczQ/view?usp=sharing" target="_blank">Resume</a>
+              <a class="toggle-ham" data-toggle="collapse" data-target=".navbar-collapse.in" href="https://drive.google.com/file/d/0B0zYpkuiznx-UU1IaU16RGRkczQ/view?usp=sharing" rel="noopener noreferrer" target="_blank">Resume</a>
             </li>
         </ul>
     </div>
@@ -63,113 +63,96 @@
     </div>
   </div>
 </div>
-  <div class="row row1 grey lighten-5">
-    <div class="col s12" id="headshot-col">
-      <div id="pad"></div>
-    </div>
-  </div>
-  <div id="skills-wrapper">
-    <div id="skills-head" class="jumbotron valign-wrapper grey lighten-1">
+  <div id="skills-anchor"></div>
+  <div id="lnk1" class="row row1 grey lighten-1">
+    <div id="skills-head" class="jumbotron valign-wrapper">
       <h1 id="skill-head" class="tech">Technical Skills</h1>
     </div>
     <div class="content-box z-depth-4 grey lighten-2" id="my-skills">
       <div class="skill-box">
-        <h4 class="headers">Languages<span class="last-skill skills">JavaScript, Python, Ruby, HTML5, CSS3/Sass</span></h4>
-      </div>
-      <div class="skill-box">
-        <h4 class="last-header">Client-Side</h4><span class="last-skill">Angular, Rxjs, Bootstrap</span>
-      </div>
-      <div class="skill-box">
+        <h4 class="headers">Languages<span class="last-skill skills">JavaScript / TypeScript, Python, HTML5, CSS3/Sass</span></h4>
+        </div>
+        <div class="skill-box">
         <h4 class="headers">Databases<span class="last-skill skills">MySQL, PostgreSQL, MongoDB</span></h4>
       </div>
       <div class="skill-box">
         <h4 class="last-header">Server-Side</h4><span class="last-skill">Rails, Django, Express, Flask, Node.js</span>
       </div>
+      <div class="skill-box">
+      <h4 class="last-header">Other</h4><span class="last-skill">OOP, HTTP, TCP/IP, REST, API development, TDD,<br>Real-time applications, Single page applications, AJAX</span>
+      </div>
     </div>
-    <!-- <div class="skill-box">
-    <h4 class="last-header">Other</h4><span class="last-skill">OOP, HTTP, TCP/IP, REST, API development, TDD,<br>Real-time applications, Single page applications, AJAX</span>
-    </div> -->
 </div>
 <div class="project-row row">
 <div class="col s12" id="project-head">
 <div id="project-container">
-	<div class="jumbotron latest-proj grey lighten-1">
-		<h1 class="tech">Latest Projects</h1>
-	</div>
-  <div id="projects">
-    <ul id="project-list">
-      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj1">mean-scaffold</button>        
-      <li id="proj1" class="collapse example z-depth-4 grey lighten-2">
-        <img class="logo" src="images/mean-scaffold.png" alt="mean-scaffold" />
-          <p class="example-head">mean-scaffold</p>
-          <a href="https://github.com/sheldonbazzell/mean_scaffold" target="_blank">Source code.</a>
-          <a href="https://www.npmjs.com/package/mean-scaffold" target="_blank">Published npm package.</a>
-        <div class="content">
-          <p class="example-tech">Technologies: Bash, JavaScript, MongoDB, Angular, Express, Node.js</p>
-          <p class="example-project">This is a published NPM package that generates a customizable MEAN stack CRUD app from the command line in 20 seconds. This includes models of your choice, and associations are supported. For this project, my teammate and I split the development tasks evenly — including sharing responsibility in scripting server and client-side code. We learned to script in Bash for this project and published the package within four days. Package accumulated over 200 downloads in its first 3 days of publication.
-      </p>
-        </div>
-        <img src="images/mean-proj.png" class="screenshots2">
-      </li>
-      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj2">Buy Now</button> 
-      <li id="proj2" class="collapse example z-depth-4 grey lighten-2">
-        <img class="logo" src="images/buyitnow.png" alt="BuyNow" />
-          <p class="example-head">BuyNow</p>
-          <a href="https://github.com/sheldonbazzell/ecommerce-site" target="_blank">Source code.</a>
-          <a href="http://54.244.33.63/" target="_blank">Deployed site.</a>
-        <div class="content">
-          <p class="example-tech">Technologies: Ruby on Rails, JavaScript, AJAX, PostgreSQL</p>
-          <p class="example-project">This is an e-commerce web app. The app allows a logged in user to filter products by category and search by keyword. On individual product pages, the user may add the item to his/her cart, and leave a review (if user has already purchased the item). For the project, I constructed the models, wrote the CRUD instance methods for the products, reviews, users, and sessions. This included the search algorithm in Ruby and the review functionality in Ruby and jQuery/AJAX.</p>
-        </div>
-        <img src="images/ecommerce_shot_1.png" class="screenshots">
-        <img src="images/ecommerce_shot_2.png" class="screenshots">
-        <img src="images/ecommerce_shot_3.png" class="screenshots2">
-
-      </li>
-      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj3">Trips n Stops</button> 
-      <li id="proj3" class="collapse example z-depth-4 grey lighten-2">
-        <div class="content">
-          <img class="logo" src="images/logo2.png" alt="Trips n Stops" />
-          <p class="example-head">Trips n Stops</p>
-          <a href="https://github.com/sheldonbazzell/trips-n-stops" target="_blank">Source code.</a>
-          <a href="http://35.164.63.109/" target="_blank">Deployed site.</a>
-          <p class="example-tech">Technologies: Python, JavaScript, AJAX, Django, SQLite3, Google Maps API, Yelp Fusion API</p>
-          <p class="example-project">This web app is designed to help plan a road trip, guiding you with Yelp's top content for each of your stops. The user can enter up to 23 stops along the road trip. For each location, the app will display the top 5 Yelp results for restaurants, hotels, and parks. I handled the Yelp API for this project, including writing the AJAX request, and the Python function to return the Yelp content to the user. The project was completed in 2 days.</p>
-        </div>
-        <img src="images/road-trip.png" class="screenshots2">
-
-      </li>
-      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj4">Dojo Invaders</button> 
-      <li id="proj4" class="collapse example z-depth-4 grey lighten-2">
-        <img class="logo logo3" src="images/shuriken.png" alt="Dojo Invaders" />
-          <p class="example-head">Dojo Space Invaders</p>
-          <a href="https://github.com/sheldonbazzell/dojo-space-invaders" target="_blank">Source code.</a>
-          <a href="http://dojo-invaders.surge.sh" target="_blank"> Play it.</a>
-        <div class="content">
-          <p class="example-tech">Technologies: JavaScript, Canvas, HTML5, CSS3</p>
-          <p class="example-project">This game was written per an interview prompt. During the interview, I was instructed to build as many features as possible in a Space Invaders-esque game within 1 hour.
-          Following the interview, I continued to work on the game.</p>
-        </div>
-        <img src="images/shuriken-toss.png" class="screenshots2">
-      </li>
-      <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj5">Sockets Chatroom</button>
-      <li id="proj5" class="collapse example z-depth-4 grey lighten-2">
-        <img class="logo logo4" src="images/socket.png" alt="Socket.io Chatroom" />
-          <p class="example-head">Socket.io Chatroom</p>
-          <a href="https://github.com/sheldonbazzell/socket-io-chatroom" target="_blank">Source code.</a>
-        <div class="content">
-          <p class="example-tech">Technologies: Socket.io, Node.js, Express, JavaScript, jQuery</p>
-          <p class="example-project center">This is a chatroom app built with Socket.io on top of Node.js and Express.</p>
-        </div>
-        <img src="images/chatroom1.png" class="screenshots">
-        <img src="images/chatroom2.png" class="screenshots">
-      </li>
-    </ul>
+    <div class="project-row row">
+      <div class="col s12" id="project-head">
+        <div id="proj-anchor"></div>
+        <div id="project-container">
+          <div class="jumbotron latest-proj">
+            <h1 class="tech">Latest Projects</h1>
+          </div>
+          <div id="projects">
+            <ul>
+              <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj1">The Bread Project</button>
+              <li id="proj1" class="collapse example z-depth-4 grey lighten-2">
+                <img class="logo" src="images/cropped-tbp-logo.jpg" alt="TBP">
+                <p class="example-head">The Bread Project</p>
+                <a href="https://github.com/Opportunity-Hack-San-Jose-2017/TBP-Creating_Opportunity_Ecosystem" rel="noopener noreferrer" target="_blank">Source code.</a>
+                <div class="content">
+                  <p class="example-tech">Technologies: Angular, TypeScript, HTML5, CSS3, localStorage, Java, Spring Boot, Hibernate, MySQL</p>
+                  <p class="example-project">
+                    This project was created during the Opportunity Hack at PayPal, and earned The People's Choice Award. Our problem statement was to create an app that will automate the
+                    job placement process that is currently executed by the employees of The Bread Project. My primary responsibilities were: frontend system design and frontend implementation (TypeScript,
+                    HTML5, CSS3, localStorage). This included integrating with the Rest API implemented by our backend developer.
+                  </p>
+                </div>
+                <img src="images/tbp1.png" class="screenshots2">
+                <img src="images/tbp2.png" class="screenshots2">
+              </li>
+              <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj2">mean-scaffold</button>
+              <li id="proj2" class="collapse example z-depth-4 grey lighten-2">
+                <img class="logo" src="images/mean-scaffold.png" alt="mean-scaffold" />
+                <p class="example-head">mean-scaffold</p>
+                <a href="https://github.com/sheldonbazzell/mean_scaffold" rel="noopener noreferrer" target="_blank">Source code.</a>
+                <a href="https://www.npmjs.com/package/mean-scaffold" rel="noopener noreferrer" target="_blank">Published npm package.</a>
+                <div class="content">
+                  <p class="example-tech">Technologies: Bash, JavaScript, MongoDB, Angular, Express, Node</p>
+                  <p class="example-project">
+                    This is a published NPM package that generates a customizable MEAN stack CRUD app from the command line in 20 seconds. This includes models of your choice, and associations are supported. For this project, my teammate and I split the development tasks evenly — including sharing responsibility in scripting server and client-side code. We learned to script in Bash for this project and published the package within four days. Package accumulated over 200 downloads in its first 3 days of publication.
+                  </p>
+                </div>
+                <img src="images/mean-proj.png" class="screenshots2">
+              </li>
+            <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj4">Dojo Invaders</button> 
+            <li id="proj4" class="collapse example z-depth-4 grey lighten-2">
+              <img class="logo logo3" src="images/shuriken.png" alt="Dojo Invaders" />
+                <p class="example-head">Dojo Space Invaders</p>
+                <a href="https://github.com/sheldonbazzell/dojo-space-invaders" target="_blank">Source code.</a>
+                <a href="http://dojo-invaders.surge.sh" target="_blank"> Play it.</a>
+              <div class="content">
+                <p class="example-tech">Technologies: JavaScript, Canvas, HTML5, CSS3</p>
+                <p class="example-project">This game was written per an interview prompt. During the interview, I was instructed to build as many features as possible in a Space Invaders-esque game within 1 hour.
+                Following the interview, I continued to work on the game.</p>
+              </div>
+              <img src="images/shuriken-toss.png" class="screenshots2">
+            </li>
+            <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj5">Sockets Chatroom</button>
+            <li id="proj5" class="collapse example z-depth-4 grey lighten-2">
+              <img class="logo logo4" src="images/socket.png" alt="Socket.io Chatroom" />
+                <p class="example-head">Socket.io Chatroom</p>
+                <a href="https://github.com/sheldonbazzell/socket-io-chatroom" target="_blank">Source code.</a>
+              <div class="content">
+                <p class="example-tech">Technologies: Socket.io, Node.js, Express, JavaScript, jQuery</p>
+                <p class="example-project center">This is a chatroom app built with Socket.io on top of Node.js and Express.</p>
+              </div>
+              <img src="images/chatroom1.png" class="screenshots">
+              <img src="images/chatroom2.png" class="screenshots">
+            </li>
+            </ul>
   </div>
   </div>
-</div>
-</div>
-</div>
 <div class="row">
 <div class="valign-wrapper col s12 grey lighten-5" id="foot">
 <div class="contact-box z-depth-4" id="contact-container">
@@ -185,20 +168,20 @@
     </h2>
 
     <h2 class="contact">
-      <a href="http://www.linkedin.com/in/sheldonbazzell" target="_blank">
+      <a href="http://www.linkedin.com/in/sheldonbazzell" rel="noopener noreferrer" target="_blank">
         <img class="icon" src="images/linkedin.png" alt="Linked In" />
       </a>
       <span class="port">
-        <a href="http://www.linkedin.com/in/sheldonbazzell" target="_blank">linkedin.com/in/sheldonbazzell</a>
+        <a href="http://www.linkedin.com/in/sheldonbazzell" rel="noopener noreferrer" target="_blank">linkedin.com/in/sheldonbazzell</a>
       </span>
     </h2>
 
     <h2 class="contact">
-      <a href="http://www.github.com/sheldonbazzell" target="_blank">
+      <a href="http://www.github.com/sheldonbazzell" rel="noopener noreferrer" target="_blank">
         <img class="icon" src="images/github.png" alt="Github" />
       </a>
       <span class="port">
-        <a href="http://www.github.com/sheldonbazzell" target="_blank">github.com/sheldonbazzell</a>
+        <a href="http://www.github.com/sheldonbazzell" rel="noopener noreferrer" target="_blank">github.com/sheldonbazzell</a>
       </span>
     </h2>
 
