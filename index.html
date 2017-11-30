@@ -54,12 +54,9 @@
     </div>
   </div>
   <div class="col s12" id="hello-col">
-    <div class="us z-depth-3 grey lighten-2">
-      <p>
-        I'm passionate about JavaScript and UI development, but enjoy working the backend as well. In addition to my work as an engineer,
-        I have nearly 3 years work experience with marketing management and business-to-business ad sales.
-      </p>
-      <p>
+    <div class="us grey lighten-2">
+      <p class="ninety">I'm passionate about JavaScript and UI development, but enjoy working the backend as well. In addition to my work as an engineer, I have nearly 3 years work experience with marketing management and business-to-business ad sales.</p>
+      <p class="ninety">
         Have a spot on your team or just want to chat? 
         <a href="#contact-container">Let's get in touch!</a>
       </p>
@@ -77,17 +74,18 @@
         </div>
         <div class="skill-box">
         <h4 class="headers">Databases<span class="last-skill skills">MySQL, PostgreSQL, MongoDB</span></h4>
-        </div>
-        <div class="skill-box">
-        <h4 class="last-header">Client-Side</h4><span class="last-skill">Angular, flux (ngrx/store), Rxjs, Bootstrap</span>
-        </div>
-        <div class="skill-box">
+      </div>
+      <div class="skill-box">
         <h4 class="last-header">Server-Side</h4><span class="last-skill">Rails, Django, Express, Flask, Node.js</span>
-        </div>
-        <div class="skill-box">
-        <h4 class="last-header">Other</h4><span class="last-skill">HTTP, TCP/IP, REST API development, OOP, TDD,<br>Real-time applications, Single page applications, AJAX</span>
+      </div>
+      <div class="skill-box">
+      <h4 class="last-header">Other</h4><span class="last-skill">OOP, HTTP, TCP/IP, REST, API development, TDD,<br>Real-time applications, Single page applications, AJAX</span>
       </div>
     </div>
+</div>
+<div class="project-row row">
+<div class="col s12" id="project-head">
+<div id="project-container">
     <div class="project-row row">
       <div class="col s12" id="project-head">
         <div id="proj-anchor"></div>
@@ -127,37 +125,33 @@
                 </div>
                 <img src="images/mean-proj.png" class="screenshots2">
               </li>
-              <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj3">Trips n Stops</button> 
-              <li id="proj3" class="collapse example z-depth-4 grey lighten-2">
-                <div class="content">
-                  <img class="logo" src="images/logo2.png" alt="Trips n Stops" />
-                  <p class="example-head">Trips n Stops</p>
-                  <a href="https://github.com/sheldonbazzell/trips-n-stops" rel="noopener noreferrer" target="_blank">Source code.</a>
-                  <a href="http://35.164.63.109/" rel="noopener noreferrer" target="_blank">Deployed site.</a>
-                  <p class="example-tech">Technologies: Python, JavaScript, AJAX, Django, SQLite3, Google Maps API, Yelp Fusion API</p>
-                  <p class="example-project">This web app is designed to help plan a road trip, guiding you with Yelp's top content for each of your stops. The user can enter up to 23 stops along the road trip. For each location, the app will display the top 5 Yelp results for restaurants, hotels, and parks. I handled the Yelp API for this project, including writing the AJAX request, and the Python function to return the Yelp content to the user. The project was completed in 2 days.</p>
-                </div>
-                <img src="images/road-trip.png" class="screenshots2">
-              </li>
-              <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj4">Dojo Invaders</button> 
-              <li id="proj4" class="collapse example z-depth-4 grey lighten-2">
-                <img class="logo logo3" src="images/shuriken.png" alt="Dojo Invaders" />
-                  <p class="example-head">Dojo Space Invaders</p>
-                  <a href="https://github.com/sheldonbazzell/dojo-space-invaders" rel="noopener noreferrer" target="_blank">Source code.</a>
-                  <a href="http://dojo-invaders.surge.sh" rel="noopener noreferrer" target="_blank"> Play it.</a>
-                <div class="content">
-                  <p class="example-tech">Technologies: JavaScript, HTML5, CSS3</p>
-                  <p class="example-project">This game was written per an interview prompt. During the interview, I was instructed to build as many features as possible in a Space Invaders-esque game within 1 hour.
-                  Following the interview, I continued to work on the game.</p>
-                </div>
-                <img src="images/shuriken-toss.png" class="screenshots2">
-              </li>
+            <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj4">Dojo Invaders</button> 
+            <li id="proj4" class="collapse example z-depth-4 grey lighten-2">
+              <img class="logo logo3" src="images/shuriken.png" alt="Dojo Invaders" />
+                <p class="example-head">Dojo Space Invaders</p>
+                <a href="https://github.com/sheldonbazzell/dojo-space-invaders" target="_blank">Source code.</a>
+                <a href="http://dojo-invaders.surge.sh" target="_blank"> Play it.</a>
+              <div class="content">
+                <p class="example-tech">Technologies: JavaScript, Canvas, HTML5, CSS3</p>
+                <p class="example-project">This game was written per an interview prompt. During the interview, I was instructed to build as many features as possible in a Space Invaders-esque game within 1 hour.
+                Following the interview, I continued to work on the game.</p>
+              </div>
+              <img src="images/shuriken-toss.png" class="screenshots2">
+            </li>
+            <button type="button" class="project-collapse btn btn-info" data-toggle="collapse" data-target="#proj5">Sockets Chatroom</button>
+            <li id="proj5" class="collapse example z-depth-4 grey lighten-2">
+              <img class="logo logo4" src="images/socket.png" alt="Socket.io Chatroom" />
+                <p class="example-head">Socket.io Chatroom</p>
+                <a href="https://github.com/sheldonbazzell/socket-io-chatroom" target="_blank">Source code.</a>
+              <div class="content">
+                <p class="example-tech">Technologies: Socket.io, Node.js, Express, JavaScript, jQuery</p>
+                <p class="example-project center">This is a chatroom app built with Socket.io on top of Node.js and Express.</p>
+              </div>
+              <img src="images/chatroom1.png" class="screenshots">
+              <img src="images/chatroom2.png" class="screenshots">
+            </li>
             </ul>
-
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
   </div>
 <div class="row">
 <div class="valign-wrapper col s12 grey lighten-5" id="foot">
